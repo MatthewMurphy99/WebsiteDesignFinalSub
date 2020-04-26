@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<!--	Name: Matthew Murphy
+	Year: 1
+	Date Created: 19/3/20
+	Description: Enniskillen Running Club Conatact Page -->
+
+<html lang=en>
+    <head>
+        <title>Contact Us</title>
+	       <meta charset="utf-8"/>
+	       <meta name= "description" content=""/>
+	       <meta name="keywords" content="Running; Query; Question"/>
+	       <meta name ="author" content = "Matthew Murphy"/>
+        <link rel=icon href="Images/iconModded.ico"/>  
+        <link rel="stylesheet" href="Styles/Styling.css"/>
+    </head>
+    <body>
+        
+        
+        <header>
+            <div id="backgroundImage"></div>
+        </header>
+        
+        
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutScreen.html">About ERC</a></li>
+                <li><a href="ResultsScreen.html">Results</a></li>
+                <li><a href="FixturesScreen.html">Fixtures</a></li>
+                <li><a href="NewsScreen.html">Club News</a></li>
+                <li><a href="ContactUsScreen.html">Contact Us</a></li>
+            </ul>
+        </nav>
+            
+                <form action="http://year1.ccpdev.me/FormTest.php" method="post">
+                
+                <label for="first_name">First name:<span class="required">*</span></label>
+                <input type="text" name="first_name" id="first_name" autofocus required><br>
+                <label for="last_name">Last name:<span class="required">*</span></label>
+                <input type="text" name="last_name" id="last_name" required><br>
+                <label for="email">Email:<span class="required">*</span></label>
+                <input type="email" name="email" id="email" required placeholder="johndoe@example.com"><br>
+                <label for="gender">Gender :</label>
+                <input type="radio" id="genderMale" name="gender" value="male"> Male
+                <input type="radio" id="genderFemale" name="gender" value="female"> Female
+                <input type="radio" id="gender" name="gender" value="other" checked> Other <br>
+                <label for="internet"> Heard of us:</label>
+                <fieldset>
+                    <input type="checkbox" id="facebookHear" name="facebookHear" value="facebookHear" checked> Facebook <br>
+                    <input type="checkbox" class="athleticsNiHear" id="athleticsNiHear" name="athleticsNiHear" value="athleticsNiHear"> Athletics Northern Ireland<br>
+                    <input type="checkbox" class="friendHear" id="friendHear" name="friendHear" value="friendHear"> Friend <br>
+                    <input type="checkbox" class="otherHear" id="otherHear" name="Add" value="otherHear"> Other <br>
+                </fieldset>
+                <br>
+                <label for="message">Query : </label>
+                <textarea cols="40" rows="6" id="message" name="message" placeholder="Your message must be less than 500 characters" data-maxlength="500"></textarea> <br>
+                <input type="submit" name="submit" id="button" value="Submit">
+                <input type="reset" name="reset" id="reset">
+                </form>
+                <p style="margin-left: 138px"> <span class="required">*</span> <em> means you must fill in this field </em></p>
+                
+        
+    </body>
+
+    <footer><br>Copyright &copy; Enniskillen Running Club 2009-2020</footer>
+</html>
+        
